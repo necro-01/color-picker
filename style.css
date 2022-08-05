@@ -1,0 +1,115 @@
+html {
+    background-color: rgb(232, 244, 255);
+}
+
+body {
+    width: 300px;
+    text-align: center;
+}
+
+.full-body {
+    background-color: rgb(232, 244, 255);
+}
+
+.text-container {
+    height: 60px;
+    background-color: rgb(232, 244, 255);
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    padding-top: 10px;
+}
+
+.img-container {
+    background-color: rgb(232, 244, 255);
+    text-align: center;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+    border: 4px solid lightgray;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+img:hover {
+    border: 4px solid rgb(175, 175, 175);
+}
+
+#click-here {
+    font-family: Nunito, sans-serif;
+    font-size: small;
+    color: rgb(170, 170, 170);
+}
+
+ul {
+    background-color: rgb(232, 244, 255);
+}
+
+.colors {
+    margin-top: .85rem;
+    background-color: rgb(232, 244, 255);
+    list-style: none;
+    display: flex;
+    gap: 0.4rem;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.colors .color {
+    color: rgb(232, 244, 255);
+    width: 4rem;
+    height: 3rem;
+    border: 2px solid currentColor;
+    border-radius: 10%;
+    box-sizing: border-box;
+    flex: none;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+
+.colors .color:hover {
+    transform: scale(1.12);
+    z-index: 2;
+}
+
+.colors .color .del {
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    border-radius: 10%;
+    opacity: 0;
+    width: .75rem;
+    height: .8rem;
+    display: grid;
+    place-items: center;
+    clip-path: polygon(-70px -2px, 116.67% -3px, 125% 133.33%, 57.92% 100%, 33.33% 91.67%, 11.67% 77.21%, 0px 50%);
+}
+
+.colors .color .del::before {
+    content: 'X';
+    font-family: nunito;
+    font-size: .6rem;
+}
+
+.colors .color:hover .del {
+    opacity: 1;
+}
+
+.message {
+    display: none;
+    position: relative;
+    background: rgb(232, 244, 255);
+    font-family: Nunito, sans-serif;
+    color: aliceblue;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+}
